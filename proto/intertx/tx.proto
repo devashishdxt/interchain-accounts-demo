@@ -26,9 +26,7 @@ message MsgRegisterAccount {
 }
 
 // MsgRegisterAccountResponse defines the response for Msg/RegisterAccount
-message MsgRegisterAccountResponse {
-  string version = 1 [(gogoproto.moretags) = "yaml:\"version\""];
-}
+message MsgRegisterAccountResponse {}
 
 // MsgSubmitTx defines the payload for Msg/SubmitTx
 message MsgSubmitTx {
