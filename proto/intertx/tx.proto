@@ -22,10 +22,13 @@ message MsgRegisterAccount {
 
   string owner                      = 1;
   string connection_id              = 2 [(gogoproto.moretags) = "yaml:\"connection_id\""];
+  string version                    = 3 [(gogoproto.moretags) = "yaml:\"version\""];
 }
 
 // MsgRegisterAccountResponse defines the response for Msg/RegisterAccount
-message MsgRegisterAccountResponse {}
+message MsgRegisterAccountResponse {
+  string version = 1 [(gogoproto.moretags) = "yaml:\"version\""];
+}
 
 // MsgSubmitTx defines the payload for Msg/SubmitTx
 message MsgSubmitTx {
